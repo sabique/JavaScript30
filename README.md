@@ -16,7 +16,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 6. [Type Ahead](https://sabique.github.io/JavaScript30/06%20-%20Type%20Ahead/)
 
-7. Array Cardio, Day 2
+7. [Array Cardio, Day 2](https://sabique.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/)
 
 8. Fun with HTML5 Canvas
 
