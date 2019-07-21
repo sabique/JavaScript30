@@ -14,7 +14,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 5. [Flex Panel Gallery](https://sabique.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/)
 
-6. Type Ahead
+6. [Type Ahead](https://sabique.github.io/JavaScript30/06%20-%20Type%20Ahead/)
 
 7. Array Cardio, Day 2
 
