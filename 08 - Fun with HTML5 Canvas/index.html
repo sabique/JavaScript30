@@ -19,13 +19,15 @@
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
   ctx.strokeStyle = '#BADA55';
-  // ctx.lineJoin = 'round';
+  ctx.lineJoin = 'round';
   ctx.lineCap = 'round';
   ctx.lineWidth = 2;
 
   let isDrawing = false;
   let lastX = 0;
   let lastY = 0;
+  let offsetX = 0;
+  let offsetY = 0;
   let hue = 0;
   let direction = true;
 
@@ -34,11 +36,12 @@
 
     ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
     ctx.lineWidth = hue;
+    setOffset(e);
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
-    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.lineTo(offsetX, offsetY);
     ctx.stroke();
-    [lastX, lastY] = [e.offsetX, e.offsetY];
+    [lastX, lastY] = [offsetX, offsetY];
 
     hue++;
     if(hue >= 360){
@@ -59,17 +62,30 @@
 
   function enableDrawing(e){
     isDrawing = true;
-    [lastX, lastY] = [e.offsetX, e.offsetY];
+    setOffset(e);
+    [lastX, lastY] = [offsetX, offsetY];
   }
 
   function disableDrawing(){
     isDrawing = false;
   }
 
+  function setOffset(e){
+    if(e.type === 'touchstart' || e.type === 'touchmove' || e.type === 'touchend'){
+      [offsetX, offsetY] = [e.changedTouches[0].clientX, e.changedTouches[0].clientY]
+    } else {
+      [offsetX, offsetY] = [e.offsetX, e.offsetY];
+    }
+  }
+
   canvas.addEventListener('mousemove', draw);
   canvas.addEventListener('mousedown', enableDrawing);
   canvas.addEventListener('mouseup', disableDrawing);
   canvas.addEventListener('mouseout', disableDrawing);
+
+  canvas.addEventListener('touchmove', draw);
+  canvas.addEventListener('touchstart', enableDrawing);
+  canvas.addEventListener('touchend', disableDrawing);
 </script>
 </body>
 </html>
