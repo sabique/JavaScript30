@@ -18,7 +18,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 7. [Array Cardio, Day 2](https://sabique.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/)
 
-8. Fun with HTML5 Canvas
+8. [Fun with HTML5 Canvas](https://sabique.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/)
 
 9. Dev Tools Domination
 
