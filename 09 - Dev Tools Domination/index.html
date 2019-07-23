@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+    console.log('Logging a text!');
+
+    // Interpolated
+    console.log('Hello I am a %s string', 'interpolated');
+
+    const backTilt = 'interpolated using tick';
+    console.log(`Hello I am a ${backTilt} string`);
+
+    // Styled
+    console.log(`%c Logging a text with style!`, 'font-size: 20px; color: red; padding: 0; margin: 0;');
+
+    // warning!
+    console.warn('This is a warning message!');
+
+    // Error :|
+    console.error('This is an error message!');
+
+    // Info
+    console.info('This is an informative message!');
+
+    // Testing
+    const para = document.querySelector('p');
+    console.assert(para.classList.contains('my-class'), 'Paragraph doesn\'t contain the class my-class!');
+    
+    // clearing
+    //console.clear();
+    console.info('console.clear() is commented to avoid tha blank console. Check source code!');
+
+    // Viewing DOM Elements
+    console.info('Listing all the available methods/properties of the paragraph using console.dir().');
+    console.dir(para);
+
+    // Grouping together
+    console.info('Grouping the logs using console.group()')
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      console.log(`The dog name is ${dog.name}.`);
+      console.log(`${dog.name} is ${dog.age} years old.`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old.`);
+      console.groupEnd();
+    });
+
+    console.info('Grouping the logs using console.groupCollapsed() but collapsed by default')
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`The dog name is ${dog.name}.`);
+      console.log(`${dog.name} is ${dog.age} years old.`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old.`);
+      console.groupEnd();
+    });
+
+    // counting
+    console.info('Counting the log using console.count()');
+    console.count('Team1');
+    console.count('Team1');
+    console.count('Team1');
+    console.count('Team2');
+    console.count('Team1');
+    console.count('Team1');
+    console.count('Team1');
+    console.count('Team2');
+    console.count('Team2');
+    console.count('Team1');
+    console.count('Team1');
+    console.count('Team1');
+    console.count('Team2');
+    console.count('Team1');
+    console.count('Team2');
+
+    // timing
+    console.info('Calculating the time using console.time()');
+    console.time('Fetching API');
+    fetch('https://api.github.com/users/sabique')
+    .then(data => data.json())
+    .then(data => {
+      console.timeEnd('Fetching API');
+    });
+
+  </script>
+</body>
+</html>
