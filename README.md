@@ -20,7 +20,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 8. [Fun with HTML5 Canvas](https://sabique.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/)
 
-9. Dev Tools Domination
+9. [Dev Tools Domination](https://sabique.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/)
 
 10. Hold Shift and Check Checkboxes
 
