@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="../favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="player">
+     <video class="player__video viewer" src="652333414.mp4"></video>
+
+     <div class="player__controls">
+       <div class="progress">
+        <div class="progress__filled"></div>
+       </div>
+       <button class="player__button toggle" title="Toggle Play">►</button>
+       <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1" tooltip="Volume">
+       <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1" tooltip="Playback Speed">
+       <button data-skip="-10" class="player__button">« 10s</button>
+       <button data-skip="25" class="player__button">25s »</button>
+     </div>
+   </div>
+
+  <script>
+    const player = document.querySelector('.player');
+    const video = player.querySelector('.viewer');
+    const progress = player.querySelector('.progress');
+    const progressBar = player.querySelector('.progress__filled');
+    
+    const toggle = player.querySelector('.toggle');
+    const skipButtons = player.querySelectorAll('.player__button');
+    const ranges = player.querySelectorAll('.player__slider');
+
+    function togglePlay(){
+      video.paused? video.play() : video.pause();
+    }
+
+    function togglePlayButton(){
+      const icon = video.paused ? '►' : '❚ ❚';
+      toggle.textContent = icon;
+    }
+
+    function skipVideo(){
+      video.currentTime += parseFloat(this.dataset.skip);
+    }
+
+    function handleRange(){
+      video[this.name] = this.value;
+    }
+
+    function progressVideo(e){
+      const playProgress = (e.offsetX / progress.offsetWidth) * video.duration;
+      video.currentTime = playProgress;
+    }
+
+    function handleProgressBar(){
+      const percentage = (video.currentTime / video.duration) * 100;
+      progressBar.style.flexBasis = `${percentage}%`;
+    }
+    
+    video.addEventListener('click', togglePlay);
+    video.addEventListener('play', togglePlayButton);
+    video.addEventListener('pause', togglePlayButton);
+    video.addEventListener('timeupdate', handleProgressBar);
+
+    toggle.addEventListener('click', togglePlay);
+    skipButtons.forEach(button => button.addEventListener('click', skipVideo));
+    ranges.forEach(range => range.addEventListener('click', handleRange));
+
+    let mousedown = false;
+    progress.addEventListener('click', progressVideo);
+    progress.addEventListener('mousemove', (e) => mousedown && progressVideo(e));
+    progress.addEventListener('mousedown', () => mousedown = true);
+    progress.addEventListener('mouseup', () => mousedown = false);
+  </script>
+</body>
+</html>
