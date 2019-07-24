@@ -24,7 +24,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 10. [Hold Shift and Check Checkboxes](https://sabique.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/)
 
-11. Custom Video Player
+11. [Custom Video Player](https://sabique.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/)
 
 12. Key Sequence Detection
 
