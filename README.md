@@ -26,7 +26,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 11. [Custom Video Player](https://sabique.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/)
 
-12. Key Sequence Detection
+12. [Key Sequence Detection](https://sabique.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/)
 
 13. Slide in on Scroll
 
