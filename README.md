@@ -28,7 +28,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 12. [Key Sequence Detection](https://sabique.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/)
 
-13. Slide in on Scroll
+13. [Slide in on Scroll](https://sabique.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/)
 
 14. JavaScript References vs. Copying
 
