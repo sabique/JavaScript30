@@ -30,7 +30,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 13. [Slide in on Scroll](https://sabique.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/)
 
-14. JavaScript References vs. Copying
+14. [JavaScript References vs. Copying](https://sabique.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/)
 
 15. LocalStorage
 
