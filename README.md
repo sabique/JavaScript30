@@ -34,7 +34,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 15. [LocalStorage](https://sabique.github.io/JavaScript30/15%20-%20LocalStorage/)
 
-16. Mouse Move Shadow
+16. [Mouse Move Shadow](https://sabique.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/)
 
 17. Sort Without Articles
 
