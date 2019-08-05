@@ -36,7 +36,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 16. [Mouse Move Shadow](https://sabique.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/)
 
-17. Sort Without Articles
+17. [Sort Without Articles](https://sabique.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/)
 
 18. Adding Up Times with Reduce
 
