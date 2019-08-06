@@ -38,7 +38,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 17. [Sort Without Articles](https://sabique.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/)
 
-18. Adding Up Times with Reduce
+18. [Adding Up Times with Reduce](https://sabique.github.io/JavaScript30/18%20-%20Adding%20Up%20Times%20with%20Reduce/)
 
 19. Webcam Fun
 
