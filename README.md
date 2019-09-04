@@ -40,7 +40,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 18. [Adding Up Times with Reduce](https://sabique.github.io/JavaScript30/18%20-%20Adding%20Up%20Times%20with%20Reduce/)
 
-19. Webcam Fun
+19. [Webcam Fun](https://sabique.github.io/JavaScript30/19%20-%20Webcam%20Fun)
 
 20. Speech Detection
 
