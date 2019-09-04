@@ -18,6 +18,10 @@ html {
   border-radius: 2px;
 }
 
+.controls{
+  padding: 10px;
+}
+
 /*clearfix*/
 .photobooth:after {
   content: '';

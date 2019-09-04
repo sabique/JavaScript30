@@ -23,6 +23,12 @@ function paintCanvas(){
 
     return setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height);
+        //get the pixels
+        let pixels = ctx.getImageData(0,0,width,height);
+        //apply the effects
+        pixels = greenScreen(pixels);
+        //put the pixels back 
+        ctx.putImageData(pixels, 0, 0);
     }, 16);
 }
 
@@ -38,6 +44,45 @@ function takePhoto(){
     link.setAttribute('download', 'handsome');
     link.innerHTML = `<img src="${data}" alt="Handsome Man" />`
     strip.insertBefore(link, strip.firstChild);
+}
+
+function redEffect(pixels) {
+    for (let i = 0; i < pixels.data.length; i+=4) {
+        pixels.data[i + 0] = pixels.data[i + 0] + 100; //RED
+        pixels.data[i + 1] = pixels.data[i + 1] - 50; //GREEN
+        pixels.data[i + 2] = pixels.data[i + 2] * 0.5; //BLUE
+    }
+    return pixels;
+}
+
+function rgbSplit(pixels) {
+    for (let i = 0; i < pixels.data.length; i+=4) {
+        pixels.data[i - 150] = pixels.data[i + 0]; //RED
+        pixels.data[i + 100] = pixels.data[i + 1]; //GREEN
+        pixels.data[i - 150] = pixels.data[i + 2]; //BLUE
+    }
+    return pixels;
+}
+
+function greenScreen(pixels) {
+    const levels = {};
+
+    document.querySelectorAll('.rgb input').forEach((input) => {
+        levels[input.name] = input.value;
+    })
+
+    for (let i = 0; i < pixels.data.length; i+=4) {
+        const red = pixels.data[i + 0];
+        const green = pixels.data[i + 1];
+        const blue = pixels.data[i + 2];
+
+        if(red >= levels.rmin && red <= levels.rmax 
+            && green >= levels.gmin && green <= levels.gmax
+            && blue >= levels.bmin && blue <= levels.bmax) {
+                pixels.data[i + 3] = 0;
+            }
+    }
+    return pixels;
 }
 
 getVideo();
