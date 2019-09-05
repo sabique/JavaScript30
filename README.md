@@ -42,7 +42,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 19. [Webcam Fun](https://sabique.github.io/JavaScript30/19%20-%20Webcam%20Fun)
 
-20. Speech Detection
+20. [Speech Detection](https://sabique.github.io/JavaScript30/20%20-%20Speech%20Detection)
 
 21. Geolocation
 
