@@ -46,7 +46,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 21. [Geolocation](https://sabique.github.io/JavaScript30/21%20-%20Geolocation)
 
-22. Follow Along Link Highlighter
+22. [Follow Along Link Highlighter](https://sabique.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter)
 
 23. Speech Synthesis
 
