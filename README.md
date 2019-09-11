@@ -48,7 +48,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 22. [Follow Along Link Highlighter](https://sabique.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter)
 
-23. Speech Synthesis
+23. [Speech Synthesis](https://sabique.github.io/JavaScript30/23%20-%20Speech%20Synthesis)
 
 24. Sticky Nav
 
