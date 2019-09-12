@@ -50,7 +50,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 23. [Speech Synthesis](https://sabique.github.io/JavaScript30/23%20-%20Speech%20Synthesis)
 
-24. Sticky Nav
+24. [Sticky Nav](https://sabique.github.io/JavaScript30/24%20-%20Sticky%20Nav)
 
 25. Event Capture, Propagation, Bubbling, and Once
 
