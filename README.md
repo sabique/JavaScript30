@@ -58,7 +58,7 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 27. [Click and Drag](https://sabique.github.io/JavaScript30/27%20-%20Click%20and%20Drag)
 
-28. Video Speed Controller
+28. [Video Speed Controller](https://sabique.github.io/JavaScript30/28%20-%20Video%20Speed%20Controller)
 
 29. Countdown Timer
 
