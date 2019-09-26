@@ -60,6 +60,6 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 28. [Video Speed Controller](https://sabique.github.io/JavaScript30/28%20-%20Video%20Speed%20Controller)
 
-29. Countdown Timer
+29. [Countdown Timer](https://sabique.github.io/JavaScript30/29%20-%20Countdown%20Timer)
 
 30. Whack A Mole
