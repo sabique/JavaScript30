@@ -15,7 +15,7 @@
       <button data-time="1200" class="timer__button">Snack 20</button>
       <button data-time="3600" class="timer__button">Lunch Break</button>
       <form name="customForm" id="custom">
-        <input type="text" name="minutes" placeholder="Enter Minutes">
+        <input type="number" name="minutes" placeholder="Enter Minutes">
       </form>
     </div>
     <div class="display">
@@ -25,45 +25,5 @@
   </div>
 
   <script src="scripts.js"></script>
-  <script>
-    let countdownHandle;
-
-    const countdownTime = document.querySelector('.display__time-left');
-    const endTime = document.querySelector('.display__end-time');
-
-    function timer(seconds) {
-      const startTime = Date.now();
-      const endTime = startTime + seconds * 1000;
-      displayTimeLeft(seconds);
-      displayRemainingTime(endTime);
-
-      countdownHandle = setInterval(function(){
-        const secondsLeft = Math.round((endTime - Date.now()) / 1000);
-        
-        if(secondsLeft < 0) {
-          clearInterval(countdownHandle);
-          return;
-        }
-        displayTimeLeft(secondsLeft);
-      }, 1000);
-    }
-
-    function displayTimeLeft(seconds) {
-      const minutes = Math.floor(seconds/60);
-      const remainderSeconds = (seconds % 60);
-
-      const display = `${minutes < 10?'0':''}${minutes} : ${remainderSeconds < 10? '0' : ''}${remainderSeconds}`;
-      document.title = display;
-      countdownTime.textContent = display;
-    }
-
-    function displayRemainingTime(timestamp) {
-      const end = new Date(timestamp);
-      const hours = end.getHours();
-      const minutes = end.getMinutes();
-
-      endTime.textContent = `Be Back At ${hours} : ${minutes < 10? '0' : ''}${minutes}`;
-    }
-  </script>
 </body>
 </html>
