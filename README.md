@@ -62,4 +62,4 @@ The list of the projects created so far under the [JavaScript 30](https://sabiqu
 
 29. [Countdown Timer](https://sabique.github.io/JavaScript30/29%20-%20Countdown%20Timer)
 
-30. Whack A Mole
+30. [Whack A Mole](https://sabique.github.io/JavaScript30/30%20-%20Whack%20A%20Mole)
